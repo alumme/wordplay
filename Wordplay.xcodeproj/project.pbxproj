@@ -14,6 +14,9 @@
 		3F59AAD31BDFD08800F87C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F59AAD11BDFD08800F87C3D /* LaunchScreen.storyboard */; };
 		3F59AADE1BDFD08800F87C3D /* WordplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59AADD1BDFD08800F87C3D /* WordplayTests.swift */; };
 		3F59AAE91BDFD08800F87C3D /* WordplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59AAE81BDFD08800F87C3D /* WordplayUITests.swift */; };
+		3F59AAF71BDFD0DE00F87C3D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59AAF61BDFD0DE00F87C3D /* SecondViewController.swift */; };
+		3F59AAF91BDFD48400F87C3D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59AAF81BDFD48400F87C3D /* ThirdViewController.swift */; };
+		3F59AAFB1BDFD58000F87C3D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59AAFA1BDFD58000F87C3D /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		3F59AAE41BDFD08800F87C3D /* WordplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F59AAE81BDFD08800F87C3D /* WordplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordplayUITests.swift; sourceTree = "<group>"; };
 		3F59AAEA1BDFD08800F87C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F59AAF61BDFD0DE00F87C3D /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3F59AAF81BDFD48400F87C3D /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3F59AAFA1BDFD58000F87C3D /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				3F59AAC81BDFD08800F87C3D /* AppDelegate.swift */,
 				3F59AACA1BDFD08800F87C3D /* ViewController.swift */,
+				3F59AAF61BDFD0DE00F87C3D /* SecondViewController.swift */,
+				3F59AAF81BDFD48400F87C3D /* ThirdViewController.swift */,
+				3F59AAFA1BDFD58000F87C3D /* FourthViewController.swift */,
 				3F59AACC1BDFD08800F87C3D /* Main.storyboard */,
 				3F59AACF1BDFD08800F87C3D /* Assets.xcassets */,
 				3F59AAD11BDFD08800F87C3D /* LaunchScreen.storyboard */,
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F59AAF71BDFD0DE00F87C3D /* SecondViewController.swift in Sources */,
 				3F59AACB1BDFD08800F87C3D /* ViewController.swift in Sources */,
+				3F59AAF91BDFD48400F87C3D /* ThirdViewController.swift in Sources */,
 				3F59AAC91BDFD08800F87C3D /* AppDelegate.swift in Sources */,
+				3F59AAFB1BDFD58000F87C3D /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jgadbois.Wordplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jgadbois.Wordplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,6 +498,7 @@
 				3F59AAEF1BDFD08800F87C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F59AAF01BDFD08800F87C3D /* Build configuration list for PBXNativeTarget "WordplayTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +507,7 @@
 				3F59AAF21BDFD08800F87C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F59AAF31BDFD08800F87C3D /* Build configuration list for PBXNativeTarget "WordplayUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +516,7 @@
 				3F59AAF51BDFD08800F87C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

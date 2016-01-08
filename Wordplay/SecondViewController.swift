@@ -1,17 +1,18 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  Wordplay
 //
-//  Created by Alex Lumme on 10/27/15.
+//  Created by Alex Lumme on 11/5/15.
 //  Copyright © 2015 Alex Lumme All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController
+class SecondViewController: UIViewController
 {
-    @IBOutlet weak var nounField: UITextField!
+    @IBOutlet weak var verbField: UITextField!
     
+    var noun = ""
 
     override func viewDidLoad()
     {
@@ -20,7 +21,7 @@ class ViewController: UIViewController
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool
     {
-        if(nounField.text != nil && nounField.text != "")
+        if(verbField.text != nil && verbField.text != "")
         {
             return true
         }
@@ -32,9 +33,10 @@ class ViewController: UIViewController
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        let secondVC = segue.destinationViewController as! SecondViewController
-        secondVC.noun = nounField.text!
-        secondVC.title = nounField.text
+        let thirdVC = segue.destinationViewController as! ThirdViewController
+        thirdVC.noun = noun
+        thirdVC.verb = verbField.text!
+        thirdVC.title = noun + " " + verbField.text!
     }
-    
+
 }

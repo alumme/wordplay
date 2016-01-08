@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ThirdViewController.swift
 //  Wordplay
 //
 //  Created by Alex Lumme on 10/27/15.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class ThirdViewController: UIViewController
 {
-    @IBOutlet weak var nounField: UITextField!
+    @IBOutlet weak var adjectiveField: UITextField!
+    var noun = ""
+    var verb = ""
     
-
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class ViewController: UIViewController
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool
     {
-        if(nounField.text != nil && nounField.text != "")
+        if(adjectiveField.text != nil && adjectiveField.text != "")
         {
             return true
         }
@@ -32,9 +33,12 @@ class ViewController: UIViewController
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        let secondVC = segue.destinationViewController as! SecondViewController
-        secondVC.noun = nounField.text!
-        secondVC.title = nounField.text
+        let fourthVC = segue.destinationViewController as! FourthViewController
+        fourthVC
+        fourthVC.noun = noun
+        fourthVC.verb = verb
+        fourthVC.adjective = adjectiveField.text!
+        fourthVC.title = noun + " " + verb + " " + adjectiveField.text!
     }
     
 }

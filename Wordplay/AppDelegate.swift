@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Wordplay
 //
-//  Created by John Gadbois on 10/27/15.
-//  Copyright © 2015 John Gadbois. All rights reserved.
+//  Created by Alex Lumme on 10/27/15.
+//  Copyright © 2015 Alex Lumme All rights reserved.
 //
 
 import UIKit
